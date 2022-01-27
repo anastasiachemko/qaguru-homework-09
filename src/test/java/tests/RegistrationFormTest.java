@@ -8,7 +8,7 @@ import pages.components.CalendarComponent;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationFormTestsWithPageObjects {
+public class RegistrationFormTest {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
