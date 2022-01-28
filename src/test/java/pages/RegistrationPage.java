@@ -29,7 +29,7 @@ public class RegistrationPage {
 
     public CalendarComponent calendarComponent = new CalendarComponent();
 
-    @Step("Открываем страницу с формой регистрации и проверяем, что она открылась")
+    @Step("Открываем страницу с формой регистрации; проверяем, что она открылась")
     public RegistrationPage openPage() {
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
