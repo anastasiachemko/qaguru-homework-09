@@ -7,8 +7,11 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.17.2",
-    junitVersion = "5.8.2"
+def selenideVersion = '5.25.1',
+    junitVersion = "5.8.2",
+    slf4jVersion = '1.7.33',
+    allureVersion = "2.17.2"
+
 
 allure {
     report {
@@ -27,11 +30,11 @@ allure {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.2.1",
-            "io.qameta.allure:allure-selenide:$allureVersion",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
+            "com.codeborne:selenide:$selenideVersion",
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion")
     testRuntimeOnly(
-            "org.slf4j:slf4j-simple:1.7.29",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
