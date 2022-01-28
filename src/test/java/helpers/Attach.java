@@ -57,6 +57,4 @@ public class Attach {
     public static String getSessionId(){
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
-
-
 }
