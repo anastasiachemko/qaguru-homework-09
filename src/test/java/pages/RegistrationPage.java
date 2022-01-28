@@ -31,7 +31,7 @@ public class RegistrationPage {
 
     @Step("Открываем страницу с формой регистрации; проверяем, что она открылась")
     public RegistrationPage openPage() {
-        open("/automation-practice-form");
+        open("https://demoqa.com/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
 
         return this;
