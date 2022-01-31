@@ -19,7 +19,7 @@ public class RegistrationFormTest extends TestBase {
     }
 
     @Test
-    void main() {
+    void fillRegistrationFormTest() {
         open("https://demoqa.com/automation-practice-form");
 
         registrationPage
