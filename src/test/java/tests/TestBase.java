@@ -16,11 +16,11 @@ public class TestBase {
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        String browser = System.getProperty("browser", "chrome1");
-        String version = System.getProperty("version", "91");
+        String browser = System.getProperty("browser", "chrome");
+        String version = System.getProperty("version", "90");
         String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
-        String login = System.getProperty("login", "user11");
-        String password = System.getProperty("password", "12341");
+        String login = System.getProperty("login", "user1");
+        String password = System.getProperty("password", "1234");
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
