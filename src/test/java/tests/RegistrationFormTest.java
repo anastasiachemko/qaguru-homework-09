@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import pages.components.CalendarComponent;
 
-import static com.codeborne.selenide.Selenide.open;
-
 public class RegistrationFormTest extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
@@ -20,7 +18,7 @@ public class RegistrationFormTest extends TestBase {
 
     @Test
     void fillRegistrationFormTest() {
-        open("https://demoqa.com/automation-practice-form");
+        registrationPage.openPage();
 
         registrationPage
                 .typeFirstName("Anastasia")
